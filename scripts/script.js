@@ -89,6 +89,12 @@ function updateColorCategories() {
         var colorSquare = document.createElement('div');
         colorSquare.className = 'colorSquare';
         colorSquare.style.backgroundColor = color;
+
+        // 添加点击事件监听器
+        colorSquare.addEventListener('click', function () {
+            selectSquaresByColor(color);
+        });
+
         var colorInfo = document.createElement('span');
         colorInfo.className = 'colorInfo';
         colorInfo.textContent = ': ' + rgbToHex(color); // 冒号在这里
@@ -389,8 +395,13 @@ function downloadImage() {
     });
 }
 
+// 新增的函数，根据颜色选择方块
+function selectSquaresByColor(color) {
+    var allSquares = document.querySelectorAll('#container > div');
 
-
-
-
-
+    allSquares.forEach(function (square) {
+        if (square.style.backgroundColor === color) {
+            toggleSquareSelection(square);
+        }
+    });
+}
