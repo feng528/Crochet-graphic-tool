@@ -1,6 +1,8 @@
 # Crochet-graphic-tool
 和gpt3.5一起完成的钩织图解小工具
 
+预览链接（可操作）：https://feng528.github.io/Crochet-graphic-tool/
+
 ![钩织图解](https://github.com/feng528/Crochet-graphic-tool/assets/46212350/e9b751bb-a514-463a-93fe-ea6ec0076536)
 
 举例：方块边长40，宽30，高30，提交后生成基础图形。
