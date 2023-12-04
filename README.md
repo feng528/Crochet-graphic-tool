@@ -1,8 +1,7 @@
 # Crochet-graphic-tool
 和gpt3.5一起完成的钩织图解小工具
 
-![1](https://github.com/feng528/Crochet-graphic-tool/assets/46212350/eaf827a3-9a72-4e5c-93ce-a149f53a0dcf)
-
+![钩织图解](https://github.com/feng528/Crochet-graphic-tool/assets/46212350/e9b751bb-a514-463a-93fe-ea6ec0076536)
 
 举例：方块边长40，宽30，高30，提交后生成基础图形。
 
@@ -20,4 +19,4 @@
 
 以下是按照图解完成的钩织实物，脸部小零件是后期缝合的，很丑但与图解工具无关，工具是好工具，哈哈哈😆。
 
-![钩织小猪抱枕](https://github.com/feng528/Crochet-graphic-tool/assets/46212350/f0b71fb7-43d5-4830-88f4-427b9ae863bf)
+![钩织小猪抱枕](https://github.com/feng528/Crochet-graphic-tool/assets/46212350/e1ec33c8-5342-47f7-b21e-95ab0ac3da34)
