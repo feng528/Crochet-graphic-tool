@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- 引入 jQuery 库 -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- 在 head 标签中引入 html2canvas 库 -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <title>钩织图解工具</title>
+</head>
+<body>
+<div class="dingwei">
+    <div id="container-config">
+        <div>
+            <label for="sideLength">方块边长：</label>
+            <input type="text" id="sideLength" placeholder="边长"/>
+        </div>
+        <div>
+            <label for="width">宽的方块数量：</label>
+            <input type="text" id="width" placeholder="宽度"/>
+        </div>
+        <div>
+            <label for="height">高的方块数量：</label>
+            <input type="text" id="height" placeholder="高度"/>
+        </div>
+        <div>
+            <button onclick="generateSquares()">提交</button>
+            <button onclick="openBulkColorPicker()">一键修改</button>
+            <button onclick="openColorPicker()">修改背景</button>
+            <button onclick="openNumberColorPicker()">修改数字</button>
+            <button onclick="editColorInfo()">修改标注</button>
+            <button onclick="generateNumberCircles()">显示圈数</button>
+            <button onclick="downloadImage()">下载图片</button>
+
+        </div>
+    </div>
+    <div id="container"></div>
+    <!-- 显示颜色种类-->
+    <div id="colorCategories"></div>
+</div>
+<!-- 引入项目的 JavaScript 文件 -->
+<script src="scripts/script.js"></script>
+</body>
+</html>

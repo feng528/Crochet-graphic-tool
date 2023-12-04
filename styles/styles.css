@@ -1,0 +1,124 @@
+body {
+    font-family: SpecialSymbol, DINRegular, -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", 微软雅黑, sans-serif;
+    margin: 20px;
+    font-size: 12px;
+}
+
+button {
+    font-size: 12px;
+}
+
+#container {
+    display: grid;
+    gap: 0;
+}
+
+#container > div {
+    box-sizing: border-box;
+    border: 1px solid #333;
+    margin: 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+#container > div.selected {
+    border: 2px solid #ffffff; /* 加粗边框 */
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255); /* 投影效果 */
+}
+
+#colorCategories {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.colorCategory {
+    display: inline-block;
+    margin-right: 24px;
+    text-align: center;
+}
+
+.colorSquareContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.colorSquare {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #333;
+    line-height: 30px;
+    margin: 0 8px 0 0;
+    position: relative;
+}
+
+.colorSquare:hover {
+    cursor: pointer;
+}
+
+.colorInfo {
+    line-height: 30px;
+}
+
+.colorSquareOptions {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.colorSquare:hover .colorSquareOptions {
+    display: block;
+}
+
+.colorSquare {
+    background-color: transparent;
+    border: 1px solid #333;
+}
+
+.colorSquareOptions button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    text-align: left;
+}
+
+.colorSquareOptions button:hover {
+    background-color: #f0f0f0;
+}
+
+#container-config {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-left: 12px;
+}
+
+#container-config div {
+    margin-right: 16px;
+}
+
+#container-config label {
+    width: 100px;
+}
+
+#container-config input {
+    width: 50px;
+}
+
+#container-config button {
+    margin-left: 16px;
+}
+
+.parent-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
